@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html {
+	
+	scroll-behavior: smooth;
+}
+.heronav{
+    position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+    height: auto;
+    background-color: rgba(31, 30, 30, 0.24);
+    transition: .3s ease background-color;
+    border-bottom-style: solid;
+  
+}
+
+.herofoot{
+    position: fixed;
+    right:0;
+    left: 0;
+	bottom: 0;
+	width: 150vh;
+    height: auto;
+    background-image: black;
+  
+  
+}
+.hero{
+    height: 110vh;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(hero.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+    }
+
+.hero1{
+    height: 115vh;
+     background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(hero1.jpg);
+     background-position: center;
+     background-size: cover;
+     overflow-x: hidden;
+     position: relative;
+ }
+
+ .hero3{
+    height: 180vh;
+     background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(hero3.jpg);
+     background-position: center;
+     background-size: cover;
+     overflow-x: hidden;
+     position: relative;
+ }
+
+ .hero4{
+     height: 120vh;
+     background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(hero4.jpg);
+     background-position: center;
+     background-size: auto;
+     overflow-x: hidden;
+     position: relative;
+ }
+
+ .hero2{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(hero4.jpg);
+    background-position: center;
+    background-size: auto;
+    overflow-x: hidden;
+    position: relative;
+    
+}
+.nav-bar{
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    padding: 5px 30px;   
+        
+}
+
+.nav-logo img{
+    padding-top: 10px;
+    height: 80%;
+    width: 250px;
+    border-bottom-style: solid;
+    border-color: red;
+}
+
+.nav-links{
+    flex: 1;
+}
+.nav-links ul{
+    margin-left: 50px;
+    display: inline;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px 25px;
+}
+
+.nav-links ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.btn{
+    padding: 6px 15px;
+    border: 0;
+    background: yellow;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px;
+}
+.nav-links .btn{
+    float: right;
+}
+
+.banner-title{
+margin: 100px 100px;
+color: whitesmoke;
+}
+.banner-title h3{
+    padding-top: 45px;    
+    font-size: 35px;
+    margin-bottom: 30px;
+    color:yellow;
+    text-transform: uppercase;
+    }
+
+    .vertical-bar{
+        height: 100%;
+        width: 20px;
+        background:#000;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+    }
+.search-icon{
+    height: 60%;
+    width: 80px;
+}
+
+.search-icon .fa{
+    margin: 45px 23px;
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+.social-icons {
+   /* height: 15%;
+    width: 30px;
+    background:transparent;
+    text-align: center;
+    padding-bottom: 30%;
+    padding-left: 0%;
+    bottom: 0;
+    position: fixed;*/
+    width: 10%;
+    height: 10vh;
+    display: flex;
+    padding: 20px 30px; 
+    text-align: center;
+    float: right;
+    right: 0;
+  
+}
+.banner-title span{
+font-size: 40px;
+color:red;
+animation-delay: 10ms;
+
+}
+.social-icons .fa{
+    margin: 16px 23px;
+    display: flex;
+    background-color: yellow;
+    padding: 4px 13px;
+    border: 1px solid red;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+.social-icons i{
+    height: 22px;
+    width: 55px;
+    background-image: 100%;
+    float: right;
+}
+.nav-bar .fa{
+    display: none;
+}
+
+#services .services {
+	flex-direction: column;
+	text-align: left;
+	}
+#services .service-top {
+	max-width: 600px;
+	margin: 0 auto;
+}
+#services .service-bottom {
+	display: flex;
+    align-items: center;
+	/*justify-content: center;*/
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+#services .service-item {
+	flex-basis: 30%;
+	display: flex;
+/*	align-items: flex-start;*/
+	/*justify-content: justify-center;*/
+	flex-direction: column;
+	padding: 40px;
+	border-radius: 15px;
+    /*background-image: url(./img/img-1.png);*/
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(Vision.jpg);
+    background-size: cover;
+   	margin: 10px 5%;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+#services .service-item::after {
+	content: '';
+	position: relative;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+    opacity: .9;
+    z-index: -1;   
+}
+#services .service-bottom .icon {
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px;
+}
+#services .service-item h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#services .service-item p {
+	color: white;
+   /* text-align: left;*/
+    text-transform: uppercase;
+}
+
+
+@media(max-width: 700px)
+{
+    .vertical-bar{
+        display: none;
+    }
+    .banner-title{
+        margin: 80px 40px;
+    }
+    .banner-title h3{
+        font-size: 25px;
+    }
+    .span{
+        font-size: 23px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+      
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .nav-bar .fa{
+        display: block;
+        color: #fff;
+        margin: 10px 25px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        background: #000;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    .nav-links ul a{
+        display: block;
+    }
+    .nav-links .btn{
+        float: none;
+        margin-left: 25px;
+        margin-top: 10px;
+     }
+     #services .service-bottom .service-item {
+		flex-basis: 80%;
+		margin: 1.5%;
+    }
+    .hero3{
+        height: 270vh;
+    }
+    .hero4{
+        height: 125vh;
+    }
+    .heronav{
+        border: solid;
+        border-bottom-color: red;
+}
+.herofoot{
+    padding-left: 10px;
+    width: 15px;
+}
+}
