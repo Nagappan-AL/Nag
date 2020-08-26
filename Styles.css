@@ -247,7 +247,7 @@ animation-delay: 10ms;
     background-size: cover;
    	margin: 10px 5%;
 	position: relative;
-	z-index: 2;
+	z-index: 8;
 	overflow: hidden;
 }
 #services .service-item::after {
@@ -330,7 +330,8 @@ animation-delay: 10ms;
      }
      #services .service-bottom .service-item {
 		flex-basis: 80%;
-		margin: 1.5%;
+        margin: 1.5%;
+        padding: 5px;
     }
     .hero3{
         height: 270vh;
