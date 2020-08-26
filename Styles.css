@@ -332,6 +332,7 @@ animation-delay: 10ms;
 		flex-basis: 80%;
         margin: 1.5%;
         padding: 5px;
+        z-index: 9;
     }
     .hero3{
         height: 270vh;
