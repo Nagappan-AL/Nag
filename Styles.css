@@ -278,7 +278,7 @@ animation-delay: 10ms;
 }
 
 
-@media(max-width: 700px)
+@media(max-width: 755px)
 {
     .vertical-bar{
         display: none;
